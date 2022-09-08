@@ -108,10 +108,8 @@ $PWExpiringTable | ForEach-Object{
 }
 
 
-Write-Host "Expired Accounts: $($($ExpiredUsers).count)" -ForegroundColor Yellow
-write-Host "Expiring Accounts: $($($ExpiringUsers).count)" -ForegroundColor Yellow
-
-
+Write-Host "Expired Accounts: $ExpiredUsers" -ForegroundColor Yellow
+write-Host "Expiring Accounts: $ExpiringUsers" -ForegroundColor Yellow
 
 
 $body = ConvertTo-Json -Depth 8 @{
